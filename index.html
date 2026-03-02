@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>랩실 시간표 종합 시각화</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h1>랩실 시간표 종합 시각화</h1>
+            <div class="controls">
+                <textarea id="json-input" placeholder="수업 JSON 데이터를 여기에 붙여넣으세요..."></textarea>
+                <button id="render-btn">시간표 렌더링</button>
+            </div>
+        </header>
+
+        <main>
+            <div class="timetable-wrapper">
+                <!-- Y-axis (Time labels) -->
+                <div class="time-axis" id="time-axis">
+                    <div class="time-axis-header"></div>
+                    <div class="time-axis-content" id="time-axis-content"></div>
+                </div>
+
+                <!-- Main grid -->
+                <div class="grid" id="timetable-grid">
+                    <div class="day-column" data-day="월">
+                        <div class="day-header">월요일</div>
+                        <div class="day-content"></div>
+                    </div>
+                    <div class="day-column" data-day="화">
+                        <div class="day-header">화요일</div>
+                        <div class="day-content"></div>
+                    </div>
+                    <div class="day-column" data-day="수">
+                        <div class="day-header">수요일</div>
+                        <div class="day-content"></div>
+                    </div>
+                    <div class="day-column" data-day="목">
+                        <div class="day-header">목요일</div>
+                        <div class="day-content"></div>
+                    </div>
+                    <div class="day-column" data-day="금">
+                        <div class="day-header">금요일</div>
+                        <div class="day-content"></div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
