@@ -90,6 +90,24 @@ button:hover {
     box-shadow: 0 4px 12px rgba(34, 139, 230, 0.2);
 }
 
+.github-link {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #495057;
+    background: #f1f3f5;
+    padding: 8px 16px;
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: 600;
+    transition: all 0.2s;
+}
+
+.github-link:hover {
+    background: #e9ecef;
+    color: #212529;
+}
+
 .timetable-wrapper {
     display: flex;
     background: white;
